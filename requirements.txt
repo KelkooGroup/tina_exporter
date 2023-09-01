@@ -1,0 +1,4 @@
+aiohttp
+prometheus-client
+pyyaml
+
