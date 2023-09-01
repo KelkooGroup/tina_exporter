@@ -79,7 +79,7 @@ docker run -d -p 19199:19199 -v ./tina.yaml:/config/tina.yaml:ro tina_exporter
 ### command-line
 
 ```
-python3 tina_exporter.py --config tina.yaml
+python3 exporter.py --config tina.yaml
 ```
 
 #### example systemd service file
@@ -91,7 +91,7 @@ After=network.target
  
 [Service]
 User=<your user>
-ExecStart=python3 /path/to/your/tina_exporter.py --config /path/to/your/tina_config.yaml
+ExecStart=python3 /path/to/your/exporter.py --config /path/to/your/tina_config.yaml
 Restart=on-failure
 
 [Install]
